@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Form Project</title>
+        <link rel="stylesheet" type="text/css" href="dummyformsubmission.css">
+        <script type="text/javascript" src="dummyformsubmission.js"></script>
+    </head>
+    <body>
+    
+    	<form id="form" action ="#">
+    		<table border="0">
+    			<tr><!--title of the form-->
+    				<h2 id="form_title" align="center">Sign up</h2>
+    				<p><hr class="hr_line"></p>
+    			</tr>
+    			<tr><!--form data collection start-->
+    			    <td class="input_col"><input type="text" id="firstname" name="firstname" placeholder="First name" onblur="validateFname();"></td>
+    			    <td class="feedback_col"><span id="firstNamePrompt"></span></td>
+    			</tr>
+    			<tr>
+    			    <td class="input_col"><input type="text" id="lastname" name="lastname" placeholder="Last name" onblur="validateLname();"></td>
+    			    <td class="feedback_col"><span id="lastNamePrompt"></span></td>
+    			</tr>
+    			<tr>
+    				<td class="input_col"><input type="email" id="email" name="email" placeholder="Email" onblur="validateEmail();"></td>
+    				<td class="feedback_col"><span id="emailPrompt"></span></td>
+    			</tr>
+    			<tr>
+    				<td class="input_col"><input type="email" id="confirmemail" name="email" placeholder="Confirm email" onblur="confirmEmail();"></td>
+    				<td class="feedback_col"><span id="confirmEmailPrompt"></span></td>
+    			</tr>
+    			<tr>
+    				<td class="input_col"><input type="password" id="password" name="password" placeholder="Create password" onblur="validatePassword();"></td>
+    				<td class="feedback_col"><span id="passwordPrompt"></span></td>
+    			</tr>
+    			<tr>
+    				<td class="input_col"><input type="password" id="confirmpassword" name="password" placeholder="Confirm password" onblur="confirmPassword();"></td>
+    				<td class="feedback_col"><span id="confirmPasswordPrompt"></span></td>
+    			</tr>
+    			<tr>
+    				<td colspan="2"></td>
+    			</tr>
+    			<tr>
+    				<td colspan="2"><p id="more_info_header">More Info:</p></td>
+    			</tr>
+    			<tr>
+    				<td colspan="2"></td>
+    			</tr>
+    	
+    			<tr>
+    				<td colspan="2"><span id="gender_header">Gender</span></td>
+    			</tr>
+    			<tr>
+    				<td class="gender" colspan="2"><input type="radio" name="gender" value="Male">Male</td>
+    			</tr>
+    			<tr>
+    				<td class="gender" colspan="2"><input type="radio" name="gender" value="Female">Female</td>
+    			</tr>
+    			<tr>
+    				<td class="gender" colspan="2"><input type="radio" name="gender" value="Rather not say">Rather not say</td>
+    			</tr>
+    			<!--form data collection end-->
+    		</table>
+    	</form>
+    	<!--form submission button-->
+    	<p><button id="join_button" type="button" name="submit" onclick="validateFname(); validateLname(); validateEmail(); confirmEmail();	validatePassword(); confirmPassword(); submitMessage(); formDetails();">Join</button></p>
+    	<p><hr class="hr_line"></p>
+    	
+    	<!--Image-->
+    	<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/j5f0yBRP/praying-hands-with-faith-in-religion-and-belief-in-god-on-dark-power-picture-id1181376545.jpg' border='0' 
+    	alt='praying-hands-with-faith-in-religion-and-belief-in-god-on-dark-power-picture-id1181376545' width="400px height="200px"/></a>
+    	<p id="submitmessage"></p>
+    	<p id="formdetails"></p>
+    
+    </body>
+</html>

@@ -1,0 +1,77 @@
+/*Primary selector*/
+body {
+    background-color: black;
+}
+
+
+/*ID's*/
+#form_title {
+    background-color: #1f6838; color: White;
+    border-radius: 15px; 
+    margin-left: 145px;
+    margin-right: 145px;
+    font-size: 21px;
+    border: solid; 
+    border-color: Teal;
+    border-width: thin;
+    font-weight: 500;
+}
+
+#more_info_header {
+    color: Gray;
+ }
+ 
+ #gender_header {
+    color: Gray;
+ }
+ 
+ #join_button {
+     Background-color: #ff6500;
+     color: white;
+     border: 0px;
+     border-radius: 7px;
+     font-size: 13px;
+     margin-left: 40px;
+     margin-right: 40px;
+     font-family: New Century Schoolbook, serif; 
+     padding: 10px;
+     width: 100px;
+     font-weight: 900;
+ }
+ 
+ #submitmessage {
+ color: white;
+ }
+ 
+ #formdetails {
+ color: Gray;
+ }
+ 
+/*  Will try this code if image was not fitting well
+#img {
+     max-width: 100%;
+     height: auto;
+}*/ 
+ 
+ /*Classes*/
+ .hr_line {
+     height: 1px;
+     Background-color: #ff6500;
+     border: 0px;
+ }
+ .feedback_col {
+     font-size: 13px; 
+     font-family: Times New Roman, serif;
+ }
+ 
+ .input_col {
+     font-family: Helvetica Narrow, sans-serif;
+ }
+ 
+ .gender {
+     color: white;
+     font-family: Helvetica Narrow, sans-serif;
+     font-weight: 360;
+ }
+ 
+ 
